@@ -22,18 +22,7 @@ jobs:
       - name: Build with Maven
         # -B for batch mode, --file pom.xml is often default but explicit here
         run: mvn -B package --file pom.xml
-    Create folder:
-     name: Create folder
-     runs-on: ubuntu-latest
-     steps:
-       - name: creer folder dans VM
-         uses: appleboy/ssh-action@v1
-         with:
-           host: ${{ secrets.HOST }}
-           username: linuxserver.io
-           password: ${{ secrets.PASSWORD }}
-           port: ${{ secrets.PORT }}
-           script: whoami
+   
 
   test:
     runs-on: ubuntu-latest
