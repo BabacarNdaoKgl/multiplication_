@@ -23,10 +23,6 @@ jobs:
         # -B for batch mode, --file pom.xml is often default but explicit here
         run: mvn -B package --file pom.xml
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 07aba2f226484238781003e0ce7418692c2b6989
   test:
     runs-on: ubuntu-latest
     needs: build # Ensures build job completes successfully first
@@ -66,7 +62,4 @@ jobs:
           context: .
           push: true
           tags: babacar1011/multiplication:latest
-<<<<<<< HEAD
 
-=======
->>>>>>> 07aba2f226484238781003e0ce7418692c2b6989
