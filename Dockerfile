@@ -11,5 +11,5 @@ WORKDIR /app
 EXPOSE 8080
 
 # Commande pour exécuter l'application
-ENTRYPOINT ["java", "-jar", "multiplication.jar"]  
+ENTRYPOINT ["java", "-jar", "multiplication.jar"]
              
